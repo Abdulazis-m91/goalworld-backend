@@ -9,9 +9,9 @@ REST API backend for GoalWorld sports app, built with Laravel, Sanctum Auth, and
 
 | Layer | Technology |
 |-------|-----------|
-| Framework    | Laravel 12 |
-| Auth         | Laravel Sanctum |
-| Database     | MySQL |
+| Framework | Laravel 12 |
+| Auth | Laravel Sanctum |
+| Database | MySQL |
 | External API | TheSportsDB API |
 
 ## 📡 API Endpoints
@@ -19,21 +19,21 @@ REST API backend for GoalWorld sports app, built with Laravel, Sanctum Auth, and
 ### Public
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/leagues`                     | Get all leagues |
-| GET | `/api/leagues/{id}/teams`          | Get teams by league |
-| GET | `/api/teams/{id}`                  | Get team detail |
+| GET | `/api/leagues` | Get all leagues |
+| GET | `/api/leagues/{id}/teams` | Get teams by league |
+| GET | `/api/teams/{id}` | Get team detail |
 | GET | `/api/teams/{id}/previous-matches` | Get recent matches |
-| GET | `/api/leagues/{id}/standings`      | Get league standings |
+| GET | `/api/leagues/{id}/standings` | Get league standings |
 
 ### Protected (Auth Required)
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST   | `/api/register`           | Register user |
-| POST   | `/api/login`              | Login user |
-| POST   | `/api/logout`             | Logout user |
-| GET    | `/api/me`                 | Get current user |
-| GET    | `/api/favorites`          | Get favorite teams |
-| POST   | `/api/favorites`          | Add favorite team |
+| POST | `/api/register` | Register user |
+| POST | `/api/login` | Login user |
+| POST | `/api/logout` | Logout user |
+| GET | `/api/me` | Get current user |
+| GET | `/api/favorites` | Get favorite teams |
+| POST | `/api/favorites` | Add favorite team |
 | DELETE | `/api/favorites/{teamId}` | Remove favorite |
 
 ## ⚙️ Installation
